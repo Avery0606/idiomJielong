@@ -21,4 +21,5 @@
   </view>
   <view id="topTipsFirstChar" class="topTips">第一个字不相同</view> 
   <view id="topTipsNoIdiom" class="topTips">没有该成语哦！</view> 
+  <view id="topTipsNoSame" class="topTips">请不要输入跟上次相同的成语 </view>
 </view> 

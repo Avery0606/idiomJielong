@@ -34,6 +34,10 @@ Page({
   CheckandChangeState:function(e){//输入完成后 判断
     let dic = e.target.id;
     let word = e.detail.value;
+    if(dic > 0 && word == this.data.idiomInputed[dic-1].nowidiom){//输入与上次相同
+      this.showToptips("#topTipsNoSame");
+      return;
+    }
     if(dic > 0 && word[0] != this.data.idiomInputed[dic].firstChar){//首个字不相同
       this.showToptips("#topTipsFirstChar");
       return;
