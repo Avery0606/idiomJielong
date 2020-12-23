@@ -19,5 +19,6 @@
       <text>放弃</text>
     </view>
   </view>
-  <view id="topTips">第一个字不相同</view> 
+  <view id="topTipsFirstChar" class="topTips">第一个字不相同</view> 
+  <view id="topTipsNoIdiom" class="topTips">没有该成语哦！</view> 
 </view> 

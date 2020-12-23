@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/IdiomMain/IdiomMain",
-    "pages/IdiomJielong/IdiomJielong"
+    "pages/IdiomJielong/IdiomJielong",
+    "pages/IdiomMain/IdiomMain"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -55,7 +55,7 @@
   font-size:1.5rem;
   border:.7rem solid yellow;
 }
-#topTips{
+.topTips{
   position: fixed;
   top:-2.5rem;
   color: #ffffff;

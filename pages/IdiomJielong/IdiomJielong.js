@@ -35,7 +35,7 @@ Page({
     let dic = e.target.id;
     let word = e.detail.value;
     if(dic > 0 && word[0] != this.data.idiomInputed[dic].firstChar){//首个字不相同
-      this.showToptips();
+      this.showToptips("#topTipsFirstChar");
       return;
     }
     let res = this.isIdioms(word);
@@ -51,28 +51,29 @@ Page({
       }
       this.data.idiomInputed.push(node);
     }else{//查询失败
-
+      this.showToptips("#topTipsNoIdiom");
     }
     this.setData({
       idiomInputed:this.data.idiomInputed,
       score:this.data.score
     })
   },
-  showToptips:function(){//顶部提示栏动画效果
+  showToptips:function(id){//顶部提示栏动画效果
     let dur = 300;//动画时间
-    this.animate('#topTips', [
+    let stopTime = 2000;//警告显示时间
+    this.animate(id, [
       { translateY: "0rem" },
       { translateY: "3rem" },
       ], dur, function () {
         let that = this;
         setTimeout(() => {
-          that.animate('#topTips',[
+          that.animate(id,[
             { translateY: "3rem" },
             { translateY: "0rem" },
           ], dur, function () {
-            that.clearAnimation('#topTips')
+            that.clearAnimation(id)
           }.bind(that))
-        }, 2000);
+        }, stopTime);
     }.bind(this))
   },
   giveUp:function(){//点击放弃后
