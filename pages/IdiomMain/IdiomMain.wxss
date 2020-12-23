@@ -1,0 +1,52 @@
+/* pages/IdiomMain/IdiomMain.wxss */
+page{
+  height:100%;
+  width:100%;
+}
+image{
+  position:absolute;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+}
+.idiomMain{
+  height: 100%;
+  width: 100%;
+}
+.mainBody{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.topic{
+  display: flex;
+  justify-content: center;
+}
+.topic text{
+  font-size: 2.7rem;
+  font-weight: bold;
+  letter-spacing: 0.9rem;
+}
+.beginGame{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  color:#ffffff;
+  background-color: red;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size:1.5rem;
+  border:.7rem solid yellow;
+}
+.maxScore{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color:rgb(16, 255, 203);
+}

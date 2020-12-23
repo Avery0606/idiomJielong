@@ -1,0 +1,15 @@
+<view class="idiomMain">
+  <image src="../../assets/images/IdiomJielong.png"></image>
+  <view class="mainBody">
+    <view class="topic">
+      <text>成语接龙</text>
+    </view>  
+    <view class="beginGame" bindtap="goPlay">
+      <text>{{nowScore}}</text>
+    </view>
+    <view class="maxScore">
+      <text>历史最高得分：{{maxScore}}</text>
+    </view>
+  </view>
+</view> 
+

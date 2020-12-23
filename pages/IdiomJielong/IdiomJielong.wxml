@@ -1,0 +1,23 @@
+<view class="bodyMain">
+  <view class="idiomMain">
+    <view class="idiomInput" wx:for="{{idiomInputed}}" wx:key="index">
+      <text>{{item.firstChar}}</text>
+      <input placeholder="输入成语" 
+              bindconfirm="CheckandChangeState" 
+              id="{{index}}" 
+              disabled="{{item.flag}}"
+              focus="true"></input>
+      <icon type="success" wx:if="{{item.flag}}"></icon>
+      <icon type="warn" wx:else></icon>
+    </view>
+  </view>
+  <view class="bottomView">
+    <view class="nowScore">
+      <text>目前得分：{{score}}</text>
+    </view>
+    <view class="giveUp" bindtap="giveUp">
+      <text>放弃</text>
+    </view>
+  </view>
+  <view id="topTips">第一个字不相同</view> 
+</view> 
